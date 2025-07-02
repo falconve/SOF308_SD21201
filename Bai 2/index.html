@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài 2 Bootstrap</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- LƯU Ý: TRƯỚC KHI CHIA CỘT TRONG BOOTSTRAP 
+    SỬ DỤNG .container để bọc ngoài các thẻ HTML 
+    -->
+    <!-- .container: tạo khoảng cách trái và phải -->
+    <div class="container">
+      <!-- .row: đại diện cho 12 cột của bootstrap -->
+      <div class="row">
+        <!-- LƯU Ý: khi chia cột. Thì tổng phải <= 12
+        - Nếu > 12 thì phần cột lớn hơn sẽ bị đẩy xuống dòng 
+        -->
+        <div class="col-12 col-sm-2 col-md-6 bg-danger">
+          <h1>Màn hình máy tính bình thường 1</h1>
+        </div>
+        <div class="col-12 col-sm-5 col-md-6 bg-warning">
+          <h1>
+            Màn hình máy tính bình thường 2 Màn hình máy tính bình thường 2
+          </h1>
+        </div>
+        <!-- Component Button: Thành phần nút
+        - Để sử dụng button trong bootstrap: .btn .btn-màu 
+        - Kích cỡ của nút: .btn-sm và .btn-lg
+        -->
+        <button class="col-md-3 btn btn-success">Make call to action</button>
+        <button type="button" class="btn btn-primary btn-sm">Primary</button>
+        <button type="button" class="btn btn-info btn-lg">Primary</button>
+      </div>
+    </div>
+
+    <!-- .container-fluid: không tạo khoảng cách và nội
+    dung sát bên trái 
+    -->
+    <!-- <div class="container-fluid">
+      <h1>456</h1>
+    </div> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
