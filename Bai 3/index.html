@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar, Card, List Group</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navbar: Thanh điều hướng (Thanh Menu) -->
+    <!-- 
+    Để tạo thanh navbar cần có những class sau: 
+    0. dùng thẻ <nav></nav>
+    1. navbar
+    2. navbar-expand-lg
+    Đổi màu navbar
+    1. bg-body-tertiar: xám trắng 
+    2. bg-primary: xanh biển
+    3. bg-success: xanh lá cây 
+    4. bg-danger: đỏ
+    5. bg-warning: vàng
+    -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <!-- Để tạo đc nút hiển thị trên thanh navbar
+        1. data-bs-toggle="collapse"
+        2. data-bs-target="" => giá trị bên trong phải giống với id của div 
+        có class "collapse navbar-collapse"
+        -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#thanh-menu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Trước khi tạo ul và li thì phải có div 
+        có class="collapse navbar-collapse" 
+        -->
+        <div class="collapse navbar-collapse" id="thanh-menu">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <!-- Với các thẻ li phải có class="nav-item" -->
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-12">
+          <!-- Để sử dụng được card 
+            - phải có class="card" 
+            - Trong card thì nên có class="card-body"
+            -->
+          <div class="card" style="width: 18rem">
+            <img
+              src="https://placehold.co/300x150"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h1>Đây là card trong bootstrap</h1>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-12">
+          <!-- Muốn sử dụng list-group 
+            - Phải có class="list-group" ở thẻ ul 
+            - trong các thẻ li phải có class="list-group-item"
+            -->
+          <ul class="list-group">
+            <li class="list-group-item">Học sinh 1</li>
+            <li class="list-group-item">Học sinh 2</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
