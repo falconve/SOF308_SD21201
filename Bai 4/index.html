@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table, Form, Tab, Modal</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <!-- Bảng (Table) -->
+          <!-- Để CSS bảng trong bootstrap 
+                dùng class table
+                1. .table => tạo đường viên giữa các dòng (bắt buộc)
+                2. .table-bordered => tạo đường viên cho tất cả ô 
+                ở trong bảng
+                3. .table-striped => tạo nền kẻ sọc cho các dòng 
+                lẻ
+                4. .table-hover => tạo hiệu ứng khi di chuột
+                5. .table-dark => đổi màu của bảng từ sáng sang tối
+                tới 1 dòng trên bảng sẽ có màu nền xám
+                LƯU Ý: số 2, 3, 4, 5 thêm phía sau số 1
+            -->
+          <table class="table table-bordered table-hover">
+            <thead>
+              <td>STT</td>
+              <td>Họ tên</td>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Tuấn Anh</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Khánh Lâm</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Minh Hằng</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="col-md-6">
+          <!-- Form: Input, Checkbox, Radio, Range, Select -->
+          <!-- Để sử dụng form input cần có:
+           - .form-control ở các thẻ input và type="text", type="number"
+           - .form-label ở các thẻ label
+            -->
+          <h3>Form input</h3>
+          <div class="mb-3">
+            <label for="tuoi" class="form-label">Tuổi</label>
+            <input
+              type="number"
+              class="form-control form-control-sm"
+              id="tuoi"
+            />
+          </div>
+          <!-- Để tạo khoảng cách phía ngoài và dưới 
+          mb (margin-bottom)
+          mb-1 cho tới mb-5 
+          -->
+          <div class="mb-3">
+            <label for="dia-chi" class="form-label">Địa chỉ</label>
+            <input
+              type="text"
+              class="form-control"
+              id="dia-chi"
+              placeholder="số 271 Lê Thánh Tông"
+            />
+          </div>
+          <!-- Kích cỡ của input 
+          1. .form-control-sm: nhỏ
+          2. .form-control: vừa 
+          3. .form-control-lg: lớn
+          -->
+          <div class="mb-3">
+            <label for="lop" class="form-label">Lớp</label>
+            <input
+              type="text"
+              class="form-control form-control-lg"
+              id="lop"
+              placeholder="SD20101"
+            />
+          </div>
+          <!-- Checkbox -->
+          <!-- Để sử dụng form checkbox cần có:
+           - .form-check-input ở các thẻ input và type="checkbox"
+           - .form-check-label ở các thẻ label
+            -->
+          <!-- Để tạo nút tắt bật dùng .form-switch phía sau .form-check -->
+          <h3>Checkbox - chọn sở thích</h3>
+          <div class="form-check mb-3 form-switch">
+            <input type="checkbox" class="form-check-input" />
+            <label for="" class="form-check-label">Bóng đá</label>
+          </div>
+          <div class="form-check mb-3">
+            <input type="checkbox" class="form-check-input" />
+            <label for="" class="form-check-label">Cầu lông</label>
+          </div>
+
+          <!-- Để sử dụng form radio cần có:
+           - .form-check-input ở các thẻ input và type="radio"
+           - ở thẻ input cần có name 
+           - .form-check-label ở các thẻ label
+            -->
+          <h3>Radio - chọn giới tính</h3>
+          <div class="form-check mb-3">
+            <input name="gioi-tinh" type="radio" class="form-check-input" />
+            <label for="" class="form-check-label">Nam</label>
+          </div>
+          <div class="form-check mb-3">
+            <input name="gioi-tinh" type="radio" class="form-check-input" />
+            <label for="" class="form-check-label">Nữ</label>
+          </div>
+
+          <!-- Range -->
+          <!-- Để sử dụng form range cần có:
+           - .form-range ở thẻ input và type="range" ... 
+           - .form-label ở các thẻ label
+            -->
+          <h3>Range</h3>
+          <div class="form-check mb-3">
+            <input type="range" class="form-range" />
+            <label for="" class="form-check-label">Range</label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
