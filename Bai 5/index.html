@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carousel, Badges, Alert, Tooltip, Pagination, Collapse</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1>Carousel - Slide 5 ảnh</h1>
+          <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="https://placehold.co/1080x720"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://placehold.co/900x600"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://placehold.co/500x300"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://placehold.co/1280x500"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://placehold.co/600x400"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExample"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExample"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <h3>Alert</h3>
+          <!-- Để sử dụng alert thì
+            1. Cần có .alert
+            2. Màu của alert: .alert-primary/secondary/danger/...
+            -->
+          <div class="alert alert-success">Đăng nhập thành công</div>
+        </div>
+        <div class="col-md-12">
+          <h1>Tooltip</h1>
+          <!-- Để sử dụng tooltip
+          1. data-bs-toggle="tooltip" => bắt buộc
+          2. data-bs-placement="top" => bắt buộc. 
+          Vị trí hiển thị tooltip top/left/right/bottom
+          3. data-bs-title="Tooltip on top" => bắt buộc. Nội dung của tooltip
+          -->
+          <!-- Tạo 1 tooltip hiển thị bên tay trái với nội dung 
+          "đây là tool bên trái" 
+          -->
+          <button
+            type="button"
+            class="btn btn-secondary"
+            data-bs-toggle="tooltip"
+            data-bs-placement="top"
+            data-bs-title="Tooltip on top"
+          >
+            Tooltip
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
