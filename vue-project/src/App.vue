@@ -5,6 +5,7 @@ import Bootstrap from "./components/Bootstrap.vue";
 import Directives from "./components/Directives.vue";
 import Ref from "./components/Ref.vue";
 import Reactive from "./components/Reactive.vue";
+import Props from "./components/Props.vue";
 </script>
 
 <template>
@@ -18,7 +19,9 @@ import Reactive from "./components/Reactive.vue";
     <!-- Sử dụng component Ref -->
     <!-- <Ref /> -->
     <!-- Sử dụng component Reactive -->
-    <Reactive />
+    <!-- <Reactive /> -->
+    <!-- Sử dụng component Props -->
+    <Props />
   </div>
 </template>
 
