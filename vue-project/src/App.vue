@@ -6,6 +6,7 @@ import Directives from "./components/Directives.vue";
 import Ref from "./components/Ref.vue";
 import Reactive from "./components/Reactive.vue";
 import Props from "./components/Props.vue";
+import ChildCard from "./components/ChildCard.vue";
 </script>
 
 <template>
@@ -21,7 +22,9 @@ import Props from "./components/Props.vue";
     <!-- Sử dụng component Reactive -->
     <!-- <Reactive /> -->
     <!-- Sử dụng component Props -->
-    <Props />
+    <!-- <Props /> -->
+    <!-- Sử dụng component ChildCard -->
+    <ChildCard />
   </div>
 </template>
 
