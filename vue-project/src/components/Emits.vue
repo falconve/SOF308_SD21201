@@ -39,7 +39,7 @@ function removeStudent(id) {
           </tr>
         </thead>
         <tbody>
-          <tr v-for="(student, index) in studentList">
+          <tr v-for="(student, index) in studentList" :key="index">
             <th scope="row">{{ student.id }}</th>
             <td>{{ student.msv }}</td>
             <td>{{ student.fullName }}</td>
