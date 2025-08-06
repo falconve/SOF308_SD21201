@@ -24,7 +24,14 @@ import ChildCard from "./components/ChildCard.vue";
     <!-- Sử dụng component Props -->
     <!-- <Props /> -->
     <!-- Sử dụng component ChildCard -->
-    <ChildCard />
+    <!-- <ChildCard /> -->
+
+    <!-- Dùng RouterLink để điều hướng trang / -->
+    <RouterLink to="/"></RouterLink>
+    <!-- Dùng RouterLink để điều hướng trang /demo -->
+    <RouterLink to="/demo">Tới trang demo</RouterLink>
+    <!-- Dùng RouterView để hiện thị nội dung tương ứng của route -->
+    <RouterView />
   </div>
 </template>
 

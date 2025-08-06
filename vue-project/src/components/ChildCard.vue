@@ -49,6 +49,11 @@ function remove(id) {
 </script>
 
 <template>
+  <!-- Dùng RouterLink để điều hướng trang -->
+  <!-- <RouterLink to="/demo">Tới trang demo</RouterLink> -->
+  <!-- Dùng RouterView để hiện thị nội dung tương ứng của route -->
+  <!-- <RouterView /> -->
+
   <Emits
     @confirmButton="display"
     :schoolName="name"
