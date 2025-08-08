@@ -48,6 +48,7 @@ function removeStudent(id) {
               <button class="btn btn-danger" @click="removeStudent(student.id)">
                 Xoá
               </button>
+              <a href="" class="btn btn-warning">Chi tiết</a>
             </td>
           </tr>
         </tbody>

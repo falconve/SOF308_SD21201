@@ -3,6 +3,8 @@ import { createRouter, createWebHistory } from "vue-router";
 import ChildCard from "@/components/ChildCard.vue";
 import Demo from "@/components/Demo.vue";
 import Props from "@/components/Props.vue";
+import UserCard from "@/components/UserCard.vue";
+import Bootstrap from "@/components/Bootstrap.vue";
 
 // Danh sách các route
 const routes = [
@@ -20,6 +22,21 @@ const routes = [
     path: "/props",
     name: "",
     component: Props,
+  },
+  {
+    // Khai báo route /user-card có sủ dụng component UserCard
+    path: "/user-card/:id", // dynamic routing
+    name: "UserCard",
+    component: UserCard,
+    // nested route: muốn sử dụng nested route phải
+    // sử dụng thuộc tính children
+    children: [
+      {
+        // /user-card/:id/edit
+        path: "edit",
+        component: Bootstrap,
+      },
+    ],
   },
 ];
 

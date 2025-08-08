@@ -30,6 +30,7 @@ import ChildCard from "./components/ChildCard.vue";
     <RouterLink to="/"></RouterLink>
     <!-- Dùng RouterLink để điều hướng trang /demo -->
     <RouterLink to="/demo">Tới trang demo</RouterLink>
+    <RouterLink to="/user-card">Tới trang user-card</RouterLink>
     <!-- Dùng RouterView để hiện thị nội dung tương ứng của route -->
     <RouterView />
   </div>
